@@ -84,6 +84,20 @@
           </details>
 
           <details class="faq-item" data-category="iconjt-lore">
+            <summary>Can we bring up RP when he's not playing GTA?</summary>
+            <div class="answer">
+              <p>Please god no.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Does Icon have a disability?</summary>
+            <div class="answer">
+              <p>Yes, he's a liberal soy-boy roleplayer.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
             <summary>Did something happen?</summary>
             <div class="answer">
               <p>No.</p>
@@ -97,7 +111,7 @@
             </div>
           </details>
 
-          <details class="faq-item" data-category="iconjt-lore">
+          <details class="faq-item" dataA-category="iconjt-lore">
             <summary>Is he eating enough?</summary>
             <div class="answer">
               <p>Yes.</p>
@@ -116,14 +130,29 @@
       </section>
 
       <section class="concerned" aria-labelledby="concerned-title">
-        <h2 id="concerned-title">Most recent concerned chatter</h2>
+        <h2 id="concerned-title">Concerned chatters</h2>
 
-        <div class="concerned-grid">
-          <!-- To add a new one: drop the screenshot into public/concerned/
-               then copy this block and swap the src. -->
-          <figure class="concerned-card">
-            <img src="public/concerned/dusmot-spiral.png" alt="dusmot saying: And then you spiral into some weird shit" loading="lazy">
-          </figure>
+        <div class="concerned-counter">
+          <div>
+            <p class="concerned-counter-label">Chatters registered</p>
+            <p class="concerned-counter-count" id="concerned-count" aria-live="polite">Loading...</p>
+          </div>
+          <button type="button" id="concerned-button">Register a concerned chatter</button>
+          <p class="concerned-counter-status" id="concerned-status" aria-live="polite"></p>
+          <p class="concerned-counter-admin" id="concerned-admin" hidden>Admin bypass active</p>
+        </div>
+
+        <h3 class="concerned-subtitle">Hall of Fame</h3>
+        <div class="concerned-hall">
+          <div class="concerned-grid">
+            <!-- To add a new entry: drop the screenshot into public/concerned/,
+                 copy this <figure> block, update the src/alt, and put the
+                 date the chatter was spotted in the figcaption. Newest first. -->
+            <figure class="concerned-card">
+              <img src="public/concerned/dusmot-spiral.png" alt="dusmot saying: And then you spiral into some weird shit" loading="lazy">
+              <figcaption>May 23, 2026</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
     </main>

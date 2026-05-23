@@ -366,7 +366,7 @@ summary::after {
   align-items: center;
   border-top: 1px solid var(--line);
   display: flex;
-  font-size: 0.78rem;
+  font-size: 1rem;
   justify-content: space-between;
   padding-block: 1.35rem 2.5rem;
 }
@@ -383,19 +383,102 @@ summary::after {
 }
 
 .concerned h2 {
-  font-size: clamp(1.3rem, 3vw, 1.6rem);
-  font-weight: 650;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.9rem, 4.5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
   margin: 0;
+}
+
+.concerned-counter {
+  align-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: 1fr auto;
+  max-width: 32rem;
+  padding: 0.85rem 1rem;
+  position: relative;
+  z-index: 6;
+}
+
+.concerned-counter-label,
+.concerned-counter-status {
+  color: var(--muted);
+  margin: 0;
+}
+
+.concerned-counter-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.concerned-counter-count {
+  font-size: clamp(1.7rem, 5vw, 2.35rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 0.2rem 0 0;
+}
+
+.concerned-counter-status {
+  font-size: 0.92rem;
+  grid-column: 1 / -1;
+  min-height: 1.4em;
+}
+
+#concerned-button {
+  font-size: 0.92rem;
+  min-width: 8.75rem;
+  padding: 0.6rem 0.85rem;
+}
+
+#concerned-button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.concerned-subtitle {
+  color: var(--ink);
+  font-size: clamp(1.2rem, 2.6vw, 1.35rem);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  margin: 0.25rem 0 -0.25rem;
+}
+
+.concerned-counter-admin {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  grid-column: 1 / -1;
+  letter-spacing: 0.04em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.concerned-hall {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  max-width: 32rem;
+  padding: 0.85rem 1rem;
+  position: relative;
+  z-index: 6;
 }
 
 .concerned-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.2rem;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 }
 
 .concerned-card {
+  display: grid;
+  gap: 0.5rem;
   margin: 0;
 }
 
@@ -403,6 +486,11 @@ summary::after {
   display: block;
   height: auto;
   width: 100%;
+}
+
+.concerned-card figcaption {
+  color: var(--muted);
+  font-size: 0.88rem;
 }
 
 @keyframes reveal {
@@ -438,6 +526,11 @@ summary::after {
 
   .toolbar-actions button {
     flex: 1;
+  }
+
+  .concerned-counter {
+    align-items: stretch;
+    grid-template-columns: 1fr;
   }
 
   .faq-item {

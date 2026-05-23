@@ -1,0 +1,8 @@
+name = "iconjt-faq"
+compatibility_date = "2025-05-01"
+pages_build_output_dir = "dist"
+
+# KV binding for the Concerned Chatter counter.
+[[kv_namespaces]]
+binding = "CONCERNED_COUNTER"
+id = "f5096582d7464d9e96425d84ac069e21"
