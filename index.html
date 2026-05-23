@@ -11,22 +11,8 @@
     <a class="skip-link" href="#faq-list">Skip to questions</a>
 
     <header class="site-header">
-      <nav class="nav" aria-label="Primary">
-        <a class="brand" href="#" aria-label="IconJT FAQ home">
-          <span class="brand-mark">?</span>
-          <span>IconJT FAQ</span>
-        </a>
-        <a class="nav-link" href="#faq-list">Questions</a>
-      </nav>
-
       <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">Unofficial stream lore</p>
-        <h1 id="page-title">IconJT FAQ</h1>
-        <p class="hero-copy">
-          Fast answers for recurring chat questions. Nothing more dramatic
-          than necessary.
-        </p>
-
+        <h1 id="page-title"><a class="title-link" href="https://www.twitch.tv/iconjt" target="_blank" rel="noopener noreferrer">IconJT</a> FAQ</h1>
         <form class="search-panel" role="search" aria-label="Search frequently asked questions">
           <label for="faq-search">Search the FAQ</label>
           <div class="search-row">
@@ -48,8 +34,6 @@
 
       <section class="faq-shell" id="faq-list" aria-label="Frequently asked questions">
         <div class="category">
-          <p class="category-label">Questions</p>
-
           <details class="faq-item" data-category="iconjt-lore">
             <summary>Is he sad?</summary>
             <div class="answer">
@@ -112,9 +96,35 @@
               <p>Yes.</p>
             </div>
           </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Is he eating enough?</summary>
+            <div class="answer">
+              <p>Yes.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Why does this FAQ exist?</summary>
+            <div class="answer">
+              <p>Because of chatters like you.</p>
+            </div>
+          </details>
         </div>
 
         <p class="empty-state" id="empty-state" hidden>No matching questions found.</p>
+      </section>
+
+      <section class="concerned" aria-labelledby="concerned-title">
+        <h2 id="concerned-title">Recently concerned chatters</h2>
+
+        <div class="concerned-grid">
+          <!-- To add a new one: drop the screenshot into public/concerned/
+               then copy this block and swap the src. -->
+          <figure class="concerned-card">
+            <img src="/concerned/dusmot-spiral.png" alt="dusmot saying: And then you spiral into some weird shit" loading="lazy">
+          </figure>
+        </div>
       </section>
     </main>
 
