@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple, searchable FAQ for IconJT stream lore.">
+    <title>IconJT FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#faq-list">Skip to questions</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#" aria-label="IconJT FAQ home">
+          <span class="brand-mark">?</span>
+          <span>IconJT FAQ</span>
+        </a>
+        <a class="nav-link" href="#faq-list">Questions</a>
+      </nav>
+
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Stream lore, briefly</p>
+        <h1 id="page-title">IconJT FAQ</h1>
+        <p class="hero-copy">
+          The unofficial place for quick answers about IconJT lore, vibes,
+          and recurring chat questions.
+        </p>
+
+        <form class="search-panel" role="search" aria-label="Search frequently asked questions">
+          <label for="faq-search">Search the FAQ</label>
+          <div class="search-row">
+            <input id="faq-search" type="search" placeholder="Try: chill guy, guitar, padded walls" autocomplete="off">
+            <button type="button" id="clear-search">Clear</button>
+          </div>
+        </form>
+      </section>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-label="FAQ controls">
+        <p id="result-count" aria-live="polite">Showing all questions</p>
+        <div class="toolbar-actions">
+          <button type="button" class="ghost-button" id="expand-all">Expand all</button>
+          <button type="button" class="ghost-button" id="collapse-all">Collapse all</button>
+        </div>
+      </section>
+
+      <section class="faq-shell" id="faq-list" aria-label="Frequently asked questions">
+        <div class="category">
+          <p class="category-label">IconJT Lore</p>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Is he sad?</summary>
+            <div class="answer">
+              <p>No.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Is he depressed?</summary>
+            <div class="answer">
+              <p>Also no. He's just a chill guy.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Has he listened to While My Guitar Gently Weeps?</summary>
+            <div class="answer">
+              <p>Yes.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Is he yelling at me because he hates me?</summary>
+            <div class="answer">
+              <p>No. He's just trying to understand.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Does his room have padded walls?</summary>
+            <div class="answer">
+              <p>Yes.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Did he quit RP?</summary>
+            <div class="answer">
+              <p>No.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>When will he RP again?</summary>
+            <div class="answer">
+              <p>Whenever he wants.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Did something happen?</summary>
+            <div class="answer">
+              <p>No.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-category="iconjt-lore">
+            <summary>Is he a sick man?</summary>
+            <div class="answer">
+              <p>Yes.</p>
+            </div>
+          </details>
+        </div>
+
+        <p class="empty-state" id="empty-state" hidden>No matching questions found.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Unofficial IconJT FAQ.</p>
+      <a href="#page-title">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
