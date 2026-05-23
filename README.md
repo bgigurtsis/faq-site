@@ -19,15 +19,30 @@ To add a new question, duplicate one of the existing blocks:
 
 ## Run Locally
 
-Because this is a static site, you can open `index.html` directly in a browser.
-
-If you want a local web server:
+Install dependencies once:
 
 ```powershell
-python -m http.server 8788
+npm install
 ```
 
-Then visit `http://localhost:8788`.
+Start the Vite dev server:
+
+```powershell
+npm run dev
+```
+
+Then visit the local URL Vite prints, usually `http://127.0.0.1:5173`.
+
+## Preview In Cursor
+
+Run `npm run dev`, then open the Vite local URL in Cursor's built-in browser or Simple Browser if available. You can also open the same URL in your system browser.
+
+To check the production build locally:
+
+```powershell
+npm run build
+npm run preview
+```
 
 ## Deploy To Cloudflare Pages
 
@@ -40,8 +55,8 @@ Then visit `http://localhost:8788`.
 | Setting | Value |
 | --- | --- |
 | Framework preset | None |
-| Build command | Leave blank |
-| Build output directory | `/` |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
 
 Cloudflare will give you a free subdomain like:
 
