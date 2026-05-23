@@ -1,4 +1,4 @@
-import { copyFile, cp, mkdir, readdir, rm } from "node:fs/promises";
+import { copyFile, cp, mkdir, rm } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -15,12 +15,6 @@ await Promise.all([
   copyFile(join(root, "script.js"), join(dist, "script.js")),
 ]);
 
-const publicEntries = await readdir(publicDir);
-
-await Promise.all(
-  publicEntries.map((entry) =>
-    cp(join(publicDir, entry), join(dist, entry), { recursive: true }),
-  ),
-);
+await cp(publicDir, join(dist, "public"), { recursive: true });
 
 console.log("Built static site to dist/");

@@ -17,7 +17,7 @@ To add a new question, duplicate one of the existing blocks:
 </details>
 ```
 
-To add a concerned chatter screenshot, drop the image into `public/concerned/`, then copy one `.concerned-card` block in `index.html` and update the image `src` and caption.
+To add a concerned chatter screenshot, drop the image into `public/concerned/`, then copy one `.concerned-card` block in `index.html` and update the image `src` to `public/concerned/your-image.png`.
 
 ## Run Locally
 
