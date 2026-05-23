@@ -27,17 +27,17 @@ Install dependencies once:
 npm install
 ```
 
-Start the Vite dev server:
+Start the local static server:
 
 ```powershell
 npm run dev
 ```
 
-Then visit the local URL Vite prints, usually `http://127.0.0.1:5173`.
+Then visit `http://127.0.0.1:5173`.
 
 ## Preview In Cursor
 
-Run `npm run dev`, then open the Vite local URL in Cursor's built-in browser or Simple Browser if available. You can also open the same URL in your system browser.
+Run `npm run dev`, then open `http://127.0.0.1:5173` in Cursor's built-in browser or Simple Browser if available. You can also open the same URL in your system browser.
 
 To check the production build locally:
 
