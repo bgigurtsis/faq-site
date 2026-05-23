@@ -341,8 +341,9 @@ summary::after {
 
 .answer {
   animation: reveal 180ms ease;
-  color: var(--muted);
-  font-size: 1.02rem;
+  color: var(--ink);
+  font-size: clamp(1.12rem, 2vw, 1.22rem);
+  font-weight: 450;
   max-width: 560px;
   padding: 0 3.25rem 1.25rem 1.4rem;
 }
